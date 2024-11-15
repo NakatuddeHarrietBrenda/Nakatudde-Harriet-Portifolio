@@ -1,0 +1,37 @@
+
+.navbar{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    content: center;
+    }
+    .navbar{
+        margin: 0 15px;
+        text-decoration: none;
+        border-bottom: none;
+    }
+a{
+    font-size: 26px;
+    
+}
+a{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: #f3f7f4;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
