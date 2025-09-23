@@ -130,6 +130,74 @@ h2{color:#0b6b3b;margin-bottom:20px;font-size:2rem;text-align:center;}
   font-size: 1.8rem;
   margin-bottom: 20px;
 } */
+/* default hidden */
+.hidden {
+  display: none;
+}
+
+#formMessage {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* success style */
+#formMessage.success {
+  display: block;
+  background-color: #d1f7d6;
+  color: #155724;
+  border: 1px solid #28a745;
+}
+
+/* error style */
+#formMessage.error {
+  display: block;
+  background-color: #fddede;
+  color: #721c24;
+  border: 1px solid #dc3545;
+}
+
+.contact-wrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* stacks on small screens */
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+.contact-form-container,
+.contact-info {
+  flex: 1 1 45%;
+  min-width: 300px;
+  background: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Responsive stack */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+  .contact-form-container,
+  .contact-info {
+    flex: 1 1 100%;
+  }
+}
+
+.section .contact-section {
+  background-color: #f9fcfb;
+  color: #0b6b3b;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
 
 
 /* Projects Button */
@@ -257,6 +325,15 @@ h2{color:#0b6b3b;margin-bottom:20px;font-size:2rem;text-align:center;}
 #backToTop{position:fixed;bottom:30px;right:30px;background:#0b6b3b;color:#fff;border:none;border-radius:50%;padding:10px 12px;cursor:pointer;display:none;}
 #backToTop:hover{background:#0a5a32;}
 
+.projects-section {
+  background-color: #eafdf3;   /* different from page background */
+  padding: 60px 20px;
+ border-radius: 20px;
+ box-shadow: #555;
+}
+.projects-section :hover{
+  box-shadow: #555;
+}
 .projects + .btn {
   display: block;
   margin: 30px auto;
@@ -374,6 +451,13 @@ h2{color:#0b6b3b;margin-bottom:20px;font-size:2rem;text-align:center;}
   padding: 2px 8px;
   transition: 0.3s;
 }
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* 3 per row */
+  gap: 30px;                              /* space between boxes */
+  max-width: 1200px;                      /* keeps it centered on big screens */
+  margin: 0 auto;
+}
 
 
 /* TIMELINE - GREEN & WHITE THEME */
@@ -453,6 +537,7 @@ h2{color:#0b6b3b;margin-bottom:20px;font-size:2rem;text-align:center;}
     border-radius: 20px;
     padding: 40px;
     margin: 40px auto;
+    max-height: 650px;
     max-width: 600px;
     color: #0b6b3b;
     backdrop-filter: blur(8px);
@@ -522,8 +607,12 @@ h2{color:#0b6b3b;margin-bottom:20px;font-size:2rem;text-align:center;}
   border-radius: 20px;
   padding: 30px 20px;
   text-align: center;
-  max-width: 320px;
+  width: 50px;                   /* reduce size (adjust as you like) */
+  max-width: 50%;
+  margin-top: 50px;
   margin: 30px auto;
+  text-align: center;             /* center all text inside */
+  align-self: center;             
   box-shadow: 0 4px 20px rgba(11,107,59,0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -542,7 +631,7 @@ h2{color:#0b6b3b;margin-bottom:20px;font-size:2rem;text-align:center;}
 .social-icons {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+   gap: 12px;
 }
 
 .social-icons a {
