@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Nakatudde Harriet</title>
+  <link rel="stylesheet" href="../CSS/aboutme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVIGATION MENU -->
+  <header class="menu">
+    <div class="logo-text">Harriet</div>
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="aboutus.html" class="active">ABOUT ME</a></li>
+      <li><a href="project.html">PROJECTS</a></li>
+      <li><a href="contact.html">CONTACT ME</a></li>
+    </ul>
+  </header>
+
+  <!-- AVATARS FIXED -->
+  <div class="avatar-container">
+    <img src="../images/Screenshot_20240605-210727.jpg" alt="Avatar 1" class="avatar">
+    <img src="../images/dc2b96a760291abca32e7ac46e678a63.png" alt="Avatar 2" class="avatar">
+    <img src="../images/IMG-20250531-WA0051 (1).jpg" alt="Avatar 3" class="avatar">
+  </div>
+
+  <!-- QUICK FACTS -->
+  <div class="container">
+    <div class="info-box">
+      <p>Name</p>
+      <p>Nakatudde Harriet Brenda</p>
+    </div>
+    <div class="info-box">
+      <p>Profession</p>
+      <p>Computer Science Student</p>
+    </div>
+    <div class="info-box">
+      <p>Skills</p>
+      <p>Communication, Problem-solving, Coding, Collaboration, GitHub</p>
+    </div>
+  </div>
+
+  <!-- CARDS -->
+  <section class="cards-section">
+    <h2>About Me</h2>
+    <div class="cards-container">
+      <div class="card">
+        <h3>Interests</h3>
+        <p>Traveling, Swimming, Sleeping, Reading, Eating</p>
+      </div>
+      <div class="card">
+        <h3>Personality</h3>
+        <p>Curious, Innovative, Determined, Open-minded, Creative</p>
+      </div>
+      <div class="card">
+        <h3>Goals</h3>
+        <p>Develop a strong personal brand, Build a network, Enhance technical skills, Inspire others</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="timeline-section">
+    <h2>Education & Achievements</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Diploma in Computer Science</h3>
+        <p>Women's Institute Of Technology And Innovation (WITU) (2022 - Present)</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Achievements</h3>
+        <p>1st Place in University Coding Competition, Best Student Project Award 2023</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="portfolio-cta">
+    <h2>Check My Projects</h2><br>
+    <a href="project.html" class="btn">View My Projects</a>
+  </section>
+
+  <!-- REFEREES SIDEBAR -->
+  <aside class="sidebar">
+    <h2>Referees</h2>
+    <ul>
+      <li><a href="mailto:immaculatesunday@gmail.com">Immaculate Sunday</a></li>
+      <li><a href="mailto:kakokmogodfry@gmail.com">Kakomo Godfry</a></li>
+      <li><a href="mailto:nalwangamary2020@gmail.com">Nalwanga Mary</a></li>
+    </ul>
+  </aside>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="aboutus.html">About Me</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:nakatuddeharriet936@gmail.com">nakatuddeharriet936@gmail.com</a></p>
+        <p>Location: Kamokya, Uganda</p>
+        <p>Telephone: <a href="tel:+256790439395">+256-790-439-395</a></p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Me</h3>
+        <ul class="social-links">
+          <li><a href="https://x.com/smartco34372881?s=09">Twitter</a></li>
+          <li><a href="https://www.linkedin.com/in/nakatudde-harriet-2953a230a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXQfI96wyQdKthKaTl9HSqg%3D%3D">LinkedIn</a></li>
+          <li><a href="https://github.com/NakatuddeHarrietBrenda">GitHub</a></li>
+        </ul>
+        
+      </div>
+    </div>
+    <p class="copyright">&copy; 2024 Nakatudde Harriet</p>
+  </footer>
+
+  <!-- HAMBURGER SCRIPT -->
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+    });
+  </script>
+
+</body>
+</html>

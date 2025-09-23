@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me - NAKATUDDE HARRIET</title>
+  <link rel="stylesheet" href="../CSS/contact.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+   <!-- NAVIGATION MENU -->
+  <header class="menu">
+    <div class="logo-text">Harriet</div>
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="aboutus.html" >ABOUT ME</a></li>
+      <li><a href="project.html">PROJECTS</a></li>
+      <!-- <li><a href="services.html">SERVICES</a></li> -->
+      <li><a href="contact.html" class="active">CONTACT ME</a></li>
+      <!-- <li><a href="my media.html">MEDIA</a></li> -->
+    </ul>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <h1>CONTACT ME</h1>
+
+    <!-- CONTACT FORM -->
+    <div class="contact-form-container">
+      <h2>Send Me a Message</h2>
+      <form action="#" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message..." rows="6" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+
+      <script>
+      const form = document.getElementById('contactForm');
+const confirmation = document.getElementById('confirmation');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault(); // prevent default form submission
+    
+    // Collect form data
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+    
+    try {
+        // send to backend endpoint
+        const response = await fetch('/send-message', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        });
+
+        if(response.ok){
+            confirmation.style.display = 'block';
+            form.reset(); // clear form
+        } else {
+            alert('Failed to send message. Please try again.');
+        }
+    } catch (err) {
+        alert('Error sending message.');
+    }
+});
+</script>
+
+    </div><br>
+
+    <!-- INFO BOXES -->
+    <div class="info-boxes">
+      <div class="info-box email-box">
+        <h2>Email</h2>
+        <p>
+          <a href="mailto:nakatuddeharriet936@gmail.com">nakatuddeharriet936@gmail.com</a><br>
+        
+        </p>
+      </div>
+
+      <div class="info-box location-box">
+        <h2>Location</h2>
+        <p>Plot 19, Kamokya, Uganda</p>
+      </div>
+
+      <div class="info-box contact-box">
+        <h2>Contact Me</h2>
+        <p>MTN: +256-790-439-395</p>
+      </div>
+
+      <div class="info-box follow-box">
+        <h2>Follow Me</h2>
+        <!-- <ul class="social-links">
+          <li><a href="https://www.linkedin.com/in/nakatudde-harriet-2953a230a" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/NakatuddeHarrietBrenda" target="_blank">GitHub</a></li>
+          <li><a href="https://x.com/smartco34372881?s=09" target="_blank">X</a></li>
+        </ul> -->
+
+        <div class="social-icons">
+          <!-- <a href="#"><ion-icon name="logo-facebook"></ion-icon></a> -->
+          <a href="https://www.linkedin.com/in/nakatudde-harriet-2953a230a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXQfI96wyQdKthKaTl9HSqg%3D%3D"><ion-icon name="logo-linkedin"></ion-icon>LinkedIn</a>
+         <br>
+          <a href="https://x.com/smartco34372881?s=09"><ion-icon name="logo-twitter"></ion-icon>Twitter</a>
+          <br>
+          <a href="https://github.com/NakatuddeHarrietBrenda"><ion-icon name="logo-github"></ion-icon>Github</a>
+          <br>
+          <a href="#"><ion-icon name="logo-google"></ion-icon>Google</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="aboutus.html">About Me</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <!-- <li><a href="services.html">Services</a></li> -->
+          <li><a href="contact.html">Contact</a></li>
+          <!-- <li><a href="./pages/media.html">Media</a></li> -->
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:nakatuddeharriet936@gmail.com">nakatuddeharriet936@gmail.com</a></p>
+        <p>Location: Kamokya, Uganda</p>
+        <p>Telephone: +256-790-439-395</p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Me</h3>
+        <ul class="social-links">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2024 Nakatudde Harriet</p>
+  </footer>
+
+</body>
+</html>
+
+
+<!-- 
+from flask import Flask, request, jsonify
+
+app = Flask(__name__)
+
+@app.route('/send-message', methods=['POST'])
+def send_message():
+    data = request.get_json()
+    # Here you could save to DB or send email
+    print(data)  # temporary for testing
+    return jsonify({"success": True, "message": "Message sent successfully!"}) -->
+
