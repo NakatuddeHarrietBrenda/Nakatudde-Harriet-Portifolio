@@ -97,40 +97,6 @@ h2{color:#0b6b3b;margin-bottom:20px;font-size:2rem;text-align:center;}
   .skill-bar { height: 12px; }
 }
 
-/* .skill-box.skill-info {
-  background: #f4fff9;
-  
-  border-radius: 20px;
-  padding: 30px 20px;
-  text-align: center;
-  
-  
-  max-width: 320px;
- 
-  margin-left: 40px;
-  margin-right: 80px;
-  box-shadow: 0 4px 20px rgba(11,107,59,0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-} */
-/* .skill-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-
-.skill-box.follow-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 25px rgba(11,107,59,0.4);
-} */
-
-/* .skill-box.follow-box h2 {
-  color: #0b6b3b;
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-} */
-/* default hidden */
 .hidden {
   display: none;
 }
