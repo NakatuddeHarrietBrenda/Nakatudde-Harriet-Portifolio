@@ -106,6 +106,7 @@ h2{color:#0b6b3b;margin-bottom:20px;font-size:2rem;text-align:center;}
   background: #f8fdfb;
 }
 
+
 .skills h2 {
   font-size: 2rem;
   margin-bottom: 30px;
@@ -937,6 +938,7 @@ h2{color:#0b6b3b;margin-bottom:20px;font-size:2rem;text-align:center;}
   .sidebar.show {
     transform: translateX(0); /* slide in sidebar */
   }
+
 }
 
 /* Optional: dim background when sidebar is open on mobile */
